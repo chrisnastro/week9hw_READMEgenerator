@@ -75,7 +75,8 @@ ${renderLicenseSection(data.license)}
 
 ## Questions:
 For questions or feedback please email ${data.email} or contact via GitHub [${data.github}](https://github.com/${data.github}).
-`;
+
+© 2024 Confidential and Proprietary. All Rights Reserved.`;
 }
 
 module.exports = generateMarkdown;
