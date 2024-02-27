@@ -48,15 +48,33 @@ function renderLicenseSection(license) {
   }
   return `## License:
   Utilized with permissions from the ${license} license.
-  
   ${renderLicenseBadge(license)};
-  ${renderLicenseLink(lincense)}`
+  ${renderLicenseLink(license)}`
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${renderLicenseBadge(data.license)}
+## Description:
+${data.description}
 
+## Installation Instructions:
+${data.installation}
+
+## Usage Instructions:
+${data.usage}
+
+## Contribution Guidlines"
+${data.contribution}
+
+## Test Instructions:
+${data.test}
+
+${renderLicenseSection(data.license)}
+
+## Questions:
+For questions or feedback please email ${data.email} or contact via GitHub [${data.github}](https://github.com/${data.github}).
 `;
 }
 
