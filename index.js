@@ -64,8 +64,8 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    const answers = inquirer
+async function init() {
+    const answers = await inquirer
         .prompt(questions);
         let content = generatorMarkdown(answers);
         writeToFile("(Generated)README.md", content);

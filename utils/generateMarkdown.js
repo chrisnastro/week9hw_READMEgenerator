@@ -48,7 +48,7 @@ function renderLicenseSection(license) {
   }
   return `## License:
   Utilized with permissions from the ${license} license.
-  ${renderLicenseBadge(license)};
+  ${renderLicenseBadge(license)}
   ${renderLicenseLink(license)}`
 }
 
